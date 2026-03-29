@@ -10,8 +10,8 @@
             font-family: 'Georgia', serif; 
             text-align: center; 
             padding: 40px 20px; 
-            background-color: #fdfaf6; 
-            color: #4a4a4a; 
+            background-color: #fdfaf6; /* Crema suave */
+            color: #4a4a4a; /* Gris oscuro para el texto general */
         }
         .contenedor { 
             max-width: 500px; 
@@ -23,7 +23,7 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
         h1 { 
-            color: #8b5e3c; 
+            color: #8b5e3c; /* Marrón arcilla para el título */
             border-bottom: 1px solid #e2d1c3; 
             padding-bottom: 15px; 
             font-size: 1.5em;
@@ -35,7 +35,7 @@
             display: inline-block; 
             padding: 15px 25px; 
             background: #a67c52; 
-            color: white ! aggressiveness; 
+            color: white; 
             text-decoration: none; 
             border-radius: 8px; 
             margin-top: 10px;
@@ -48,11 +48,17 @@
             padding-top: 20px;
             border-top: 1px solid #eee;
             font-size: 0.9em;
+            color: #4a4a4a; /* Texto "Sigamos en contacto" en gris oscuro */
         }
+        
+        /* SOLUCIÓN AL AZUL DESAGRADABLE */
         .link-ig {
-            color: #a67c52;
-            text-decoration: none;
+            color: #4a4a4a; /* Mismo gris oscuro que el texto, o puedes usar #8b5e3c para marrón */
+            text-decoration: underline; /* Mantenemos el subrayado para que se sepa que es link */
             font-weight: bold;
+        }
+        .link-ig:hover {
+            color: #8b5e3c; /* Cambia a marrón cuando pasas el mouse/tocas */
         }
     </style>
 </head>
