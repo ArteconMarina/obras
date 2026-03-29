@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo de Cerámica - Marina Benitez</title>
+    <style>
+        /* Estilos para que se vea lindo en el celular */
+        body { 
+            font-family: 'Georgia', serif; 
+            text-align: center; 
+            padding: 20px; 
+            background-color: #fdfaf6; /* Un color crema suave como la arcilla */
+            color: #4a4a4a; 
+            line-height: 1.6;
+        }
+        .contenedor { max-width: 600px; margin: auto; }
+        h1 { border-bottom: 2px solid #a67c52; display: inline-block; padding-bottom: 10px; color: #8b5e3c; }
+        p { margin-bottom: 30px; }
+        
+        /* Estilo de la lista de piezas */
+        .lista-obras { 
+            display: grid; 
+            grid-template-columns: 1fr; 
+            gap: 15px; 
+            margin-top: 20px;
+        }
+        .tarjeta-obra { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 12px; 
+            border: 1px solid #e2d1c3;
+            text-decoration: none;
+            color: #4a4a4a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        .tarjeta-obra:hover { background: #fff9f3; }
+        .numero { font-weight: bold; color: #a67c52; font-size: 1.2em; }
+        .flecha { color: #ccc; }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Archivo de Cerámica</h1>
+        <p>Busca el número grabado en la base de tu pieza para conocer su historia y proceso de creación.</p>
+
+        <div class="lista-obras">
+            
+            <a href="vasija-001.html" class="tarjeta-obra">
+                <span class="numero">Obra #001</span>
+                <span>Ver proceso <span class="flecha">→</span></span>
+            </a>
+            <a href="vasija-002.html" class="tarjeta-obra">
+                <span class="numero">Obra #002</span>
+                <span>Ver proceso <span class="flecha">→</span></span>
+            </a>
+
+        </div>
+
+        <footer style="margin-top: 50px; font-size: 0.8em; color: #999;">
+            <p>© 2026 Marina Benitez Schaefer<br>San Carlos de Bariloche, Argentina</p>
+        </footer>
+    </div>
+</body>
+</html>
