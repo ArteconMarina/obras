@@ -5,22 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obra #001 - Marina Benitez</title>
     <style>
-        body { font-family: 'Georgia', serif; text-align: center; padding: 40px 20px; background-color: #fdfaf6; color: #4a4a4a; }
-        .contenedor { max-width: 500px; margin: auto; border: 1px solid #e2d1c3; padding: 30px; border-radius: 15px; background: white; }
-        h1 { color: #8b5e3c; border-bottom: 1px solid #e2d1c3; padding-bottom: 15px; }
+        /* Estilo general inspirado en la cerámica artesanal */
+        body { 
+            font-family: 'Georgia', serif; 
+            text-align: center; 
+            padding: 40px 20px; 
+            background-color: #fdfaf6; 
+            color: #4a4a4a; 
+        }
+        .contenedor { 
+            max-width: 500px; 
+            margin: auto; 
+            border: 1px solid #e2d1c3; 
+            padding: 30px; 
+            border-radius: 15px; 
+            background: white; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 { 
+            color: #8b5e3c; 
+            border-bottom: 1px solid #e2d1c3; 
+            padding-bottom: 15px; 
+            font-size: 1.5em;
+        }
+        p { margin: 20px 0; }
         
-        /* BOTÓN CORREGIDO (Color arcilla/tierra) */
+        /* Botón color arcilla */
         .boton { 
             display: inline-block; 
             padding: 15px 25px; 
-            background: #a67c52; /* Color tierra que combina con el catálogo */
-            color: white; 
+            background: #a67c52; 
+            color: white ! aggressiveness; 
             text-decoration: none; 
             border-radius: 8px; 
-            margin-top: 25px;
+            margin-top: 10px;
             font-weight: bold;
         }
-        .boton:hover { background: #8b5e3c; } /* Se oscurece un poco al tocarlo */
+        .boton:hover { background: #8b5e3c; }
+        
+        .contacto {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        .link-ig {
+            color: #a67c52;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -28,15 +61,13 @@
         <h1>Vasija Orgánica #001</h1>
         <p>Esta pieza fue creada con arcilla recolectada en la Patagonia y horneada a leña.</p>
         
-        <p>Haz clic abajo para ver el proceso de creación:</p>
-        <a href="AQUÍ_TU_LINK_DE_YOUTUBE" class="boton">Ver Video del Torneado</a>
+        <p>Mira el proceso de creación aquí:</p>
+        <a href="https://youtube.com" class="boton">Ver Video del Proceso</a>
         
-        <hr style="margin-top:40px; border: 0; border-top: 1px solid #eee;">
-        
-        <p style="font-size: 0.9em;">
-            Sigamos en contacto:<br>
-            <a href="https://instagram.com/marina_art_and_design" style="color: #a67c52; text-decoration: none; font-weight: bold;">@TU_USUARIO_EN_IG</a>
-        </p>
+        <div class="contacto">
+            <p>Sigamos en contacto:<br>
+            <a href="https://instagram.com/marina_art_and_design" class="link-ig">@marina_art_and_design</a></p>
+        </div>
     </div>
 </body>
 </html>
