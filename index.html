@@ -3,66 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archivo de Cerámica - Marina Benitez</title>
+    <title>Marina Benitez Schaefer - Artes Visuales</title>
     <style>
-        /* Estilos para que se vea lindo en el celular */
+        /* Paleta de colores orgánica, limpia y minimalista */
         body { 
             font-family: 'Georgia', serif; 
             text-align: center; 
-            padding: 20px; 
-            background-color: #fdfaf6; /* Un color crema suave como la arcilla */
-            color: #4a4a4a; 
-            line-height: 1.6;
+            padding: 40px 20px; 
+            background-color: #fcf9f5; /* Tono arena/crema suave */
+            color: #2c2c2c; 
+            margin: 0;
+            letter-spacing: 0.02em;
         }
-        .contenedor { max-width: 600px; margin: auto; }
-        h1 { border-bottom: 2px solid #a67c52; display: inline-block; padding-bottom: 10px; color: #8b5e3c; }
-        p { margin-bottom: 30px; }
         
-        /* Estilo de la lista de piezas */
-        .lista-obras { 
-            display: grid; 
-            grid-template-columns: 1fr; 
-            gap: 15px; 
+        .contenedor { 
+            max-width: 500px; 
+            margin: auto; 
+            background: #ffffff; 
+            padding: 40px 30px; 
+            border-radius: 4px; 
+            box-shadow: 0 8px 24px rgba(139, 94, 60, 0.04); 
+            border-top: 5px solid #8b5e3c; /* Detalle color arcilla */
+        }
+        
+        h1 { 
+            color: #8b5e3c; 
+            font-size: 1.5em;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #8b5e3c;
+            font-size: 1.2em;
+            font-weight: normal;
+            line-height: 1.4;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #a67c52;
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p { 
+            font-size: 1em;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin: 15px 0;
+        }
+
+        .intro {
+            font-size: 1.05em;
+            text-align: left;
+        }
+        
+        /* Botones de Links Principales */
+        .boton-link { 
+            display: block; 
+            padding: 14px 20px; 
+            background: #fdfaf6;
+            color: #8b5e3c !important; 
+            text-decoration: none; 
+            border: 1px solid #e2d1c3;
+            border-radius: 4px; 
+            margin: 15px 0;
+            font-family: sans-serif; 
+            font-size: 0.9em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+        }
+        .boton-link:hover { 
+            background: #8b5e3c; 
+            color: #ffffff !important;
+            border-color: #8b5e3c;
+        }
+        
+        hr {
+            border: 0;
+            border-top: 1px solid #f0e6df;
+            margin: 40px 0;
+        }
+
+        /* Estilos para el Listado de Obras */
+        .lista-obras {
+            text-align: left;
             margin-top: 20px;
         }
-        .tarjeta-obra { 
-            background: white; 
-            padding: 20px; 
-            border-radius: 12px; 
-            border: 1px solid #e2d1c3;
+
+        .item-obra {
+            display: block;
+            padding: 15px;
+            background: #fff;
+            border-bottom: 1px solid #f0e6df;
+            color: #2c2c2c;
             text-decoration: none;
-            color: #4a4a4a;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.3s;
+            font-family: sans-serif;
+            font-size: 0.95em;
+            font-weight: bold;
+            transition: background 0.2s ease;
         }
-        .tarjeta-obra:hover { background: #fff9f3; }
-        .numero { font-weight: bold; color: #a67c52; font-size: 1.2em; }
-        .flecha { color: #ccc; }
+
+        .item-obra:hover {
+            background: #fcf9f5;
+            color: #8b5e3c;
+        }
+
+        .numero-obra {
+            color: #a67c52;
+            margin-right: 10px;
+        }
+
+        /* Estilo para los detalles que se abrirán (Próximo paso) */
+        .proximamente {
+            font-style: italic;
+            color: #7a7a7a;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
     <div class="contenedor">
-        <h1>Archivo de Cerámica</h1>
-        <p>Busca el número grabado en la base de tu pieza para conocer su historia y proceso de creación.</p>
-
+        <h1>Marina Benitez Schaefer</h1>
+        
+        <p class="intro">¡Bienvenido! Si llegaste aquí es porque adquiriste un producto original de Marina Benitez Schaefer, Licenciada en Artes Visuales de la Universidad Nacional de las Artes.</p>
+        
+        <!-- LINKS PRINCIPALES -->
+        <a href="https://arteconmarina.netlify.app/" target="_blank" class="boton-link">Talleres y Más sobre la Artista</a>
+        
+        <a href="https://www.instagram.com/marina_art_and_design?igsh=MTN2NHo5OGU1dHRzeg==" target="_blank" class="boton-link">Producción Cerámica en Instagram</a>
+        
+        <a href="https://www.behance.net/marinabenitez" target="_blank" class="boton-link">Dibujo, Pintura y Diseño en Behance</a>
+        
+        <hr> <!-- Línea horizontal sutil -->
+        
+        <h2>¿Qué significa el número que aparece junto al código QR en la pieza que tengo en mis manos?</h2>
+        
+        <p>Ese número sirve para ubicar tu obra dentro del listado que sigue a continuación, allí encontrarás datos y otros links relacionados con la obra:</p>
+        
+        <!-- LISTADO DE OBRAS -->
         <div class="lista-obras">
+            <!-- Nota: este enlace apunta a la página exclusiva de la obra 001 que crearemos -->
+            <a href="vasija-001.html" target="_blank" class="item-obra">
+                <span class="numero-obra">Obra 001:</span> Fermentadora
+            </a>
             
-            <a href="vasija-001.html" class="tarjeta-obra">
-                <span class="numero">Obra #001</span>
-                <span>Ver proceso <span class="flecha">→</span></span>
-            </a>
-            <a href="vasija-002.html" class="tarjeta-obra">
-                <span class="numero">Obra #002</span>
-                <span>Ver proceso <span class="flecha">→</span></span>
-            </a>
-
+            <div class="item-obra" style="color: #a0a0a0; font-weight: normal; background: none; cursor: default;">
+                <span class="numero-obra" style="color: #ccc;">Obra 002:</span> <span class="proximamente">Próximamente</span>
+            </div>
+            
+            <div class="item-obra" style="color: #a0a0a0; font-weight: normal; background: none; cursor: default;">
+                <span class="numero-obra" style="color: #ccc;">Obra 003:</span> <span class="proximamente">Próximamente</span>
+            </div>
         </div>
-
-        <footer style="margin-top: 50px; font-size: 0.8em; color: #999;">
-            <p>© 2026 Marina Benitez Schaefer<br>San Carlos de Bariloche, Argentina</p>
-        </footer>
+        
     </div>
 </body>
 </html>
